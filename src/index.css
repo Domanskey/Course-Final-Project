@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 @import "tailwindcss";
 
 @layer base {
   body {
-    @apply bg-primary text-stone-50;
+    @apply bg-primary text-stone-50 font-dm-sans;
   }
 
   #root {
@@ -14,4 +15,6 @@
   --color-primary: #020916;
   --color-second: #CEFF7E;
   --color-border: #1F2937;
+
+  --font-dm-sans: "DM Sans", sans-serif;
 }
