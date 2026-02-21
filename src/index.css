@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-primary text-stone-50;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
+
+@theme {
+  --color-primary: #020916;
+  --color-second: #CEFF7E;
+  --color-border: #1F2937;
+}
