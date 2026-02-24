@@ -25,10 +25,10 @@ function Info() {
         />
       </svg>
       <div>
-        <h1 className="text-second text-[20px]/[24px] font-bold mb-0.5">
+        <h1 className="text-second text-[20px]/[24px] font-semibold mb-0.5">
           Maciek WTFowicz
         </h1>
-        <p className="text-stone-50 opacity-40 uppercase text-[12px]/[16px] font-bold tracking-[5%]">
+        <p className="text-stone-50 opacity-40 uppercase text-[12px]/[16px] font-semibold tracking-[5%]">
           frontend developer
         </p>
       </div>
@@ -64,7 +64,7 @@ function Nav() {
         download
       ></A>
 
-      <button className="bg-second text-primary px-8 py-3.5 rounded-xl text-[16px]/[20px] font-bold">
+      <button className="bg-second text-primary px-8 py-3.5 rounded-xl text-[16px]/[20px] font-semibold">
         Contact
       </button>
     </nav>
@@ -76,7 +76,7 @@ function A({ text, icon, href, ...props }) {
     <a
       href={href}
       {...props}
-      className="flex flex-row gap-2 items-center text-[16px]/[20px] font-bold"
+      className="flex flex-row gap-2 items-center text-[16px]/[20px] font-semibold"
     >
       {icon}
       {text}

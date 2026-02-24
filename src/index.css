@@ -16,7 +16,7 @@
   --color-second: #CEFF7E;
   --color-border: #1F2937;
 
---breakpoint-m: 845px;
+  --breakpoint-m: 910px;
 
   --font-dm-sans: "DM Sans", sans-serif;
 }
