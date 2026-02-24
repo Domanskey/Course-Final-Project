@@ -7,7 +7,11 @@ export function Profile() {
     <picture>
       <source srcSet={profileAvif} type="image/avif" />
       <source srcSet={profileWebp} type="image/webp" />
-      <img src={profilePng} alt="Profile" />
+      <img
+        className="rounded-2xl rounded-tr-[200px] -mx-2 m:mx-0 w-[calc(100%+16px)] m:w-full max-w-104"
+        src={profilePng}
+        alt="Profile"
+      />
     </picture>
   );
 }
