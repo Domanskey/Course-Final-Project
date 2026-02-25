@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <header className="py-6 px-4 md:px-8 xl:px-16 flex flex-row justify-between">
+    <header className="py-6 px-4 md:px-8 xl:px-16 flex flex-row justify-between w-full">
       <Info></Info>
       <Nav></Nav>
     </header>

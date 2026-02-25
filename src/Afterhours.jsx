@@ -40,7 +40,7 @@ export function AfterHours() {
   };
 
   return (
-    <section className="py-5 px-6 md:px-8 md:py-7 xl:px-16 xl:py-10 max-w-360 mx-auto">
+    <section className="py-5 px-6 md:px-8 md:py-7 xl:px-16 xl:py-10 max-w-360">
       <h2 className="text-[20px]/[24px] tracking-[5%] uppercase text-gray-400 font-semibold mb-4">
         After hours
       </h2>
