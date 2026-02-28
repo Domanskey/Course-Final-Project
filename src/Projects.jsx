@@ -6,7 +6,7 @@ export function Projects() {
   return (
     <section
       id="projects"
-      className="py-5 px-6 md:px-8 md:py-7 xl:px-16 xl:py-10 max-w-360 w-full"
+      className="py-15 px-6 md:px-8 md:py-20 xl:px-16 xl:py-25 max-w-360 w-full"
     >
       <h2 className="text-[20px]/[24px] tracking-[5%] uppercase text-gray-400 font-semibold mb-4">
         Recent projects

@@ -4,7 +4,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="py-5 px-6 md:px-8 md:py-7 xl:px-16 xl:py-10 flex flex-col m:flex-row-reverse items-center justify-center gap-5 m:gap-24 x:gap-36"
+      className="py-5 px-6 md:px-8 md:py-10 xl:px-16 xl:py-15 max-w-360 w-full flex flex-col m:flex-row-reverse items-center justify-center gap-5 m:gap-24 x:gap-36"
     >
       <Profile></Profile>
       <PersonalInfo></PersonalInfo>

@@ -4,6 +4,7 @@ import { About } from "./About.jsx";
 import { AfterHours } from "./Afterhours.jsx";
 import { Footer } from "./Footer.jsx";
 import { Skills } from "./Skills.jsx";
+import { Projects } from "./Projects.jsx";
 
 export default function App() {
   return (
@@ -11,9 +12,10 @@ export default function App() {
       <Header></Header>
       <About></About>
       <Skills></Skills>
+      <Projects></Projects>
       <AfterHours></AfterHours>
       <Footer></Footer>
-      <Effect></Effect>
+      {/* <Effect></Effect> */}
     </>
   );
 }
