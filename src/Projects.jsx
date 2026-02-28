@@ -1,4 +1,8 @@
 export function Projects() {
+  //   const username = "Domanskey";
+
+  //   fetch()
+
   return (
     <section
       id="projects"
@@ -11,7 +15,10 @@ export function Projects() {
         Since diving into frontend development in 2023, I've brought a range of
         projects to life. Here's a snapshot of my accomplishments so far.
       </p>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <Project></Project>
+        <Project></Project>
+        <Project></Project>
         <Project></Project>
       </div>
     </section>
@@ -20,13 +27,13 @@ export function Projects() {
 
 function Project() {
   return (
-    <article className="group backdrop-blur-xs bg-linear-to-br from-white/10 to-white/4 inset-shadow-white/15 inset-shadow-2xs rounded-[20px] ">
+    <article className="group backdrop-blur-xs bg-linear-to-br from-white/10 to-white/4 inset-shadow-white/15 inset-shadow-2xs rounded-[20px] max-w-162">
       <div className="flex flex-row gap-1.5 items-center p-4 h-11 bg-linear-to-br from-white/10 to-white/4 rounded-t-[20px] border-b border-primary inset-shadow-white/15 inset-shadow-2xs ">
         <div className="group-hover:bg-red-500 w-3 h-3 bg-primary rounded-full bg-linear-to-br from-white/10 to-white/4"></div>
         <div className="group-hover:bg-amber-500 w-3 h-3 bg-primary rounded-full bg-linear-to-br from-white/10 to-white/4"></div>
         <div className="group-hover:bg-lime-600 w-3 h-3 bg-primary rounded-full bg-linear-to-br from-white/10 to-white/4"></div>
       </div>
-      <div className="p-5">
+      <div className="p-5 sm:p-7 xl:p-10">
         <header className="flex flex-row gap-4 items-center mb-4">
           <h3 className="text-[24px]/[24px] font-semibold">simple-editor</h3>
           <div className="flex flex-row gap-0.5 px-2 py-1 rounded-sm bg-small-background/10">
@@ -48,7 +55,7 @@ function Project() {
             <p className="text-[16px]/[16px] text-gray-400">27</p>
           </div>
         </header>
-        <p className="mb-4 text-gray-400 text-[20px]/[24px]">
+        <p className="mb-4 text-gray-400 text-[20px]/[24px] line-clamp-7 sm:line-clamp-4">
           Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor
           auctor, justo fringilla mauris sit amet nibh. Suspendisse pulvinar,
           augue ac venenatis condimentum, sem libero volutpat...
