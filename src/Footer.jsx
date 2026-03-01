@@ -1,6 +1,9 @@
 export function Footer() {
   return (
-    <footer className="py-15 px-6 md:px-8 md:py-20 xl:px-16 xl:py-25 max-w-360 w-full flex flex-col items-center">
+    <footer
+      id="contact"
+      className="py-15 px-6 md:px-8 md:py-20 xl:px-16 xl:py-25 max-w-360 w-full flex flex-col items-center"
+    >
       <p className="text-[32px] font-semibold mb-4 tracking-[-2px]">
         Let’s work together
       </p>
@@ -8,7 +11,10 @@ export function Footer() {
         I’m open for new opportunities. <br></br>If you have one for me we
         should talk!
       </p>
-      <a className="bg-second flex flex-row items-center gap-3 px-8 py-3.5 rounded-[20px] mb-10 ">
+      <a
+        href="mailto:m.wtfowicz@mail.com"
+        className="bg-second flex flex-row items-center gap-3 px-8 py-3.5 rounded-[20px] mb-10"
+      >
         <svg
           width="24"
           height="24"
@@ -33,6 +39,7 @@ export function Footer() {
       </p>
       <div className="flex flex-row flex-wrap gap-4 justify-center">
         <Social
+          href="https://github.com/"
           icon={
             <svg
               width="24"
@@ -51,6 +58,7 @@ export function Footer() {
           }
         ></Social>
         <Social
+          href="https://codepen.io/"
           icon={
             <svg
               width="24"
@@ -65,6 +73,7 @@ export function Footer() {
           }
         ></Social>
         <Social
+          href="https://pl.linkedin.com/"
           icon={
             <svg
               width="24"
@@ -79,6 +88,7 @@ export function Footer() {
           }
         ></Social>
         <Social
+          href="https://www.facebook.com/"
           icon={
             <svg
               width="24"
@@ -93,6 +103,7 @@ export function Footer() {
           }
         ></Social>
         <Social
+          href="https://www.instagram.com/"
           icon={
             <svg
               width="24"
@@ -108,6 +119,7 @@ export function Footer() {
           }
         ></Social>
         <Social
+          href="http://x.com/"
           icon={
             <svg
               width="24"
@@ -131,6 +143,8 @@ function Social({ icon, href, ...props }) {
     <a
       href={href}
       {...props}
+      target="_blank"
+      rel="noopener noreferrer"
       className="w-14 h-14 flex justify-center items-center rounded-full bg-linear-to-br from-white/10 to-white/4 inset-shadow-white/15 inset-shadow-2xs backdrop-blur-xs"
     >
       {icon}

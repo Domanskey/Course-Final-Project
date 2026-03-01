@@ -37,7 +37,10 @@ function PersonalInfo() {
       </p>
 
       <div className="flex flex-col m:flex-row gap-4 items-start">
-        <button className="bg-second text-primary px-4 py-2 rounded-xl text-[20px]/[36px] font-semibold flex flex-row items-center gap-3">
+        <a
+          href="#contact"
+          className="bg-second text-primary px-4 py-2 rounded-xl text-[20px]/[36px] font-semibold flex flex-row items-center gap-3"
+        >
           <svg
             width="24"
             height="24"
@@ -54,9 +57,12 @@ function PersonalInfo() {
             />
           </svg>
           Get in touch
-        </button>
+        </a>
 
-        <button className="bg-primary text-second px-3.5 py-1.5 rounded-xl text-[20px]/[36px] font-semibold flex flex-row items-center gap-3 border-2 border-border">
+        <a
+          href="#hobby"
+          className="bg-primary text-second px-3.5 py-1.5 rounded-xl text-[20px]/[36px] font-semibold flex flex-row items-center gap-3 border-2 border-border"
+        >
           <svg
             width="24"
             height="24"
@@ -73,7 +79,7 @@ function PersonalInfo() {
             />
           </svg>
           Get to know me
-        </button>
+        </a>
       </div>
     </div>
   );

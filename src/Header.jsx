@@ -1,3 +1,5 @@
+import cv from "./assets/cv/cv.txt";
+
 export function Header() {
   return (
     <header className="py-5 px-6 md:px-8 md:py-7 xl:px-16 xl:py-10 max-w-360 flex flex-row justify-between w-full">
@@ -44,6 +46,7 @@ function Nav() {
       <A text="Projects" href="#projects"></A>
       <A
         text="Resume"
+        href={cv}
         icon={
           <svg
             width="20"
@@ -64,9 +67,12 @@ function Nav() {
         download
       ></A>
 
-      <button className="bg-second text-primary px-8 py-3.5 rounded-xl text-[16px]/[20px] font-semibold">
+      <a
+        href="#contact"
+        className="bg-second text-primary px-8 py-3.5 rounded-xl text-[16px]/[20px] font-semibold"
+      >
         Contact
-      </button>
+      </a>
     </nav>
   );
 }
