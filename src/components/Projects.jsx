@@ -1,4 +1,4 @@
-import { useRepos } from "./components/useRepos";
+import { useRepos } from "../hooks/useRepos";
 
 export function Projects() {
   const { repos } = useRepos("Domanskey");

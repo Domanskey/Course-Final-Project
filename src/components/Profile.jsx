@@ -1,6 +1,6 @@
-import profileWebp from "./assets/images/profile.png?format=webp";
-import profileAvif from "./assets/images/profile.png?format=avif";
-import profilePng from "./assets/images/profile.png";
+import profileWebp from "../assets/images/profile.png?format=webp";
+import profileAvif from "../assets/images/profile.png?format=avif";
+import profilePng from "../assets/images/profile.png";
 
 export function Profile() {
   return (

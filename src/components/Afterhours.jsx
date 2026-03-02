@@ -1,18 +1,18 @@
-import gymWebp from "./assets/images/gym.png?format=webp";
-import gymAvif from "./assets/images/gym.png?format=avif";
-import gymPng from "./assets/images/gym.png";
+import gymWebp from "../assets/images/gym.png?format=webp";
+import gymAvif from "../assets/images/gym.png?format=avif";
+import gymPng from "../assets/images/gym.png";
 
-import gameWebp from "./assets/images/game.png?format=webp";
-import gameAvif from "./assets/images/game.png?format=avif";
-import gamePng from "./assets/images/game.png";
+import gameWebp from "../assets/images/game.png?format=webp";
+import gameAvif from "../assets/images/game.png?format=avif";
+import gamePng from "../assets/images/game.png";
 
-import musicWebp from "./assets/images/music.png?format=webp";
-import musicAvif from "./assets/images/music.png?format=avif";
-import musicPng from "./assets/images/music.png";
+import musicWebp from "../assets/images/music.png?format=webp";
+import musicAvif from "../assets/images/music.png?format=avif";
+import musicPng from "../assets/images/music.png";
 
-import starwarsWebp from "./assets/images/starwars.png?format=webp";
-import starwarsAvif from "./assets/images/starwars.png?format=avif";
-import starwarsPng from "./assets/images/starwars.png";
+import starwarsWebp from "../assets/images/starwars.png?format=webp";
+import starwarsAvif from "../assets/images/starwars.png?format=avif";
+import starwarsPng from "../assets/images/starwars.png";
 
 export function AfterHours() {
   const game = {

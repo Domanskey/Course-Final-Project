@@ -1,4 +1,4 @@
-import cv from "./assets/cv/cv.txt";
+import cv from "../assets/cv/cv.txt";
 
 export function Header() {
   return (
