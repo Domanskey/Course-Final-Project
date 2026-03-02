@@ -113,7 +113,10 @@ function Skill({ title, list, svg }) {
       <ul className="flex flex-col gap-2">
         {list.map((element) => {
           return (
-            <li className="font-[14px]/[18px] tracking-[-2%] before:content-['\2014'] before:mr-1">
+            <li
+              key={element}
+              className="font-[14px]/[18px] tracking-[-2%] before:content-['\2014'] before:mr-1"
+            >
               {element}
             </li>
           );
