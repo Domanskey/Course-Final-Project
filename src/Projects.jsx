@@ -1,7 +1,15 @@
-export function Projects() {
-  //   const username = "Domanskey";
+import { useRepos } from "./components/useRepos";
 
-  //   fetch()
+export function Projects() {
+  const { repos } = useRepos("Domanskey");
+  const names = [
+    "Testimonial-Cards",
+    "Accessible-Form-UI",
+    "Cookie-Consent",
+    "Tabs",
+    "Accordion",
+    "Tooltip-UI",
+  ];
 
   return (
     <section
@@ -16,16 +24,26 @@ export function Projects() {
         projects to life. Here's a snapshot of my accomplishments so far.
       </p>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-        <Project></Project>
-        <Project></Project>
-        <Project></Project>
-        <Project></Project>
+        {repos.map(
+          (item) =>
+            names.includes(item.name) && (
+              <Project
+                key={item.name}
+                name={item.name}
+                stars={item.stargazers_count}
+                description={item.description}
+                topics={item.topics}
+                website={item.homepage}
+                repo={item.html_url}
+              ></Project>
+            ),
+        )}
       </div>
     </section>
   );
 }
 
-function Project() {
+function Project({ name, stars, description, topics, website, repo }) {
   return (
     <article className="group backdrop-blur-xs bg-linear-to-br from-white/10 to-white/4 inset-shadow-white/15 inset-shadow-2xs rounded-[20px] max-w-162">
       <div className="flex flex-row gap-1.5 items-center p-4 h-11 bg-linear-to-br from-white/10 to-white/4 rounded-t-[20px] border-b border-primary inset-shadow-white/15 inset-shadow-2xs ">
@@ -35,7 +53,7 @@ function Project() {
       </div>
       <div className="p-5 sm:p-7 xl:p-10">
         <header className="flex flex-row gap-4 items-center mb-4">
-          <h3 className="text-[24px]/[24px] font-semibold">simple-editor</h3>
+          <h3 className="text-[24px]/[24px] font-semibold">{name}</h3>
           <div className="flex flex-row gap-0.5 px-2 py-1 rounded-sm bg-small-background/10">
             <svg
               width="16"
@@ -52,30 +70,24 @@ function Project() {
                 stroke-linejoin="round"
               />
             </svg>
-            <p className="text-[16px]/[16px] text-gray-400">27</p>
+            <p className="text-[16px]/[16px] text-gray-400">{stars}</p>
           </div>
         </header>
         <p className="mb-4 text-gray-400 text-[20px]/[24px] line-clamp-7 sm:line-clamp-4">
-          Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor
-          auctor, justo fringilla mauris sit amet nibh. Suspendisse pulvinar,
-          augue ac venenatis condimentum, sem libero volutpat...
+          {description}
         </p>
-        <ul className="flex flex-row gap-2 mb-10">
-          <li className="rounded-sm text-[14px]/[18px] font-semibold px-2 py-1 bg-small-background/10">
-            HTML
-          </li>
-          <li className="rounded-sm text-[14px]/[18px] font-semibold px-2 py-1 bg-small-background/10">
-            CSS
-          </li>
-          <li className="rounded-sm text-[14px]/[18px] font-semibold px-2 py-1 bg-small-background/10">
-            TypeScript
-          </li>
-          <li className="rounded-sm text-[14px]/[18px] font-semibold px-2 py-1 bg-small-background/10">
-            React
-          </li>
+        <ul className="flex flex-row flex-wrap gap-2 mb-10">
+          {topics.map((name) => (
+            <Topic key={name} name={name}></Topic>
+          ))}
         </ul>
         <div className="flex flex-col gap-4 items-start">
-          <button className="bg-primary px-5 py-4 rounded-xl text-second text-[16px]/[24px] font-semibold flex flex-row gap-2 border border-border">
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary px-5 py-4 rounded-xl text-second text-[16px]/[24px] font-semibold flex flex-row gap-2 border border-border"
+          >
             <svg
               width="24"
               height="24"
@@ -92,8 +104,13 @@ function Project() {
               />
             </svg>
             View demo
-          </button>
-          <button className="bg-primary px-5 py-4 rounded-xl text-second text-[16px]/[24px] font-semibold flex flex-row gap-2 border border-border">
+          </a>
+          <a
+            href={repo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary px-5 py-4 rounded-xl text-second text-[16px]/[24px] font-semibold flex flex-row gap-2 border border-border"
+          >
             <svg
               width="24"
               height="24"
@@ -109,9 +126,17 @@ function Project() {
               />
             </svg>
             Source code
-          </button>
+          </a>
         </div>
       </div>
     </article>
+  );
+}
+
+function Topic({ name }) {
+  return (
+    <li className="rounded-sm text-[14px]/[18px] font-semibold px-2 py-1 bg-small-background/10">
+      {name}
+    </li>
   );
 }
