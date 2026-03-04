@@ -54,6 +54,7 @@ export function AfterHours() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-15 gap-x-4">
         <Hobby
           title={"Electronic Music"}
+          alt={"record picture"}
           description={
             "Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music"
           }
@@ -61,6 +62,7 @@ export function AfterHours() {
         ></Hobby>
         <Hobby
           title={"Star Wars Universum"}
+          alt={"shelf picture with star wars items picture"}
           description={
             "In a galaxy not so far away, my leisure time is often spent exploring the intricate lore and captivating tales of Star Wars."
           }
@@ -68,6 +70,7 @@ export function AfterHours() {
         ></Hobby>
         <Hobby
           title={"Video Games"}
+          alt={"gamepad picture"}
           description={
             "Lost in virtual realms, I find joy and challenge in the dynamic world of video games."
           }
@@ -75,6 +78,7 @@ export function AfterHours() {
         ></Hobby>
         <Hobby
           title={"Strength Training"}
+          alt={"gym picture"}
           description={
             "Empowering both body and mind, I'm dedicated to the discipline of strength training, continuously pushing my limits."
           }
@@ -85,17 +89,13 @@ export function AfterHours() {
   );
 }
 
-function Hobby({ title, description, image }) {
+function Hobby({ title, description, image, alt }) {
   return (
     <article>
       <picture>
         <source srcSet={image.avif} type="image/avif" />
         <source srcSet={image.webp} type="image/webp" />
-        <img
-          className="rounded-[20px] mb-6 w-full"
-          src={image.png}
-          alt="Profile"
-        />
+        <img className="rounded-[20px] mb-6 w-full" src={image.png} alt={alt} />
       </picture>
       <h3 className="text-[20px]/[24px] font-semibold tracking-[-2%] mb-1">
         {title}

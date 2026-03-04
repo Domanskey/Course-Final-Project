@@ -13,6 +13,7 @@ function Info() {
   return (
     <div className="flex flex-row gap-4">
       <svg
+        aria-label="homepage icon"
         width="41"
         height="41"
         viewBox="0 0 41 41"
@@ -49,6 +50,7 @@ function Nav() {
         href={cv}
         icon={
           <svg
+            aria-hidden="true"
             width="20"
             height="20"
             viewBox="0 0 24 24"

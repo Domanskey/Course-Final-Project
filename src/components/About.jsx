@@ -42,6 +42,7 @@ function PersonalInfo() {
           className="bg-second text-primary px-4 py-2 rounded-xl text-[20px]/[36px] font-semibold flex flex-row items-center gap-3"
         >
           <svg
+            aria-hidden="true"
             width="24"
             height="24"
             viewBox="0 0 24 24"
@@ -64,6 +65,7 @@ function PersonalInfo() {
           className="bg-primary text-second px-3.5 py-1.5 rounded-xl text-[20px]/[36px] font-semibold flex flex-row items-center gap-3 border-2 border-border"
         >
           <svg
+            aria-hidden="true"
             width="24"
             height="24"
             viewBox="0 0 24 24"

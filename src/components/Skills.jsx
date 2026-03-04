@@ -27,6 +27,7 @@ export function Skills() {
           ]}
           svg={
             <svg
+              aria-label="triangle icon"
               width="184"
               height="180"
               viewBox="0 0 184 180"
@@ -55,6 +56,7 @@ export function Skills() {
           ]}
           svg={
             <svg
+              aria-label="circle icon"
               width="182"
               height="182"
               viewBox="0 0 182 182"
@@ -83,6 +85,7 @@ export function Skills() {
           ]}
           svg={
             <svg
+              aria-label="hexagon icon"
               width="180"
               height="183"
               viewBox="0 0 180 183"

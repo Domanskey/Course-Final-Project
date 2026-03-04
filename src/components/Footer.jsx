@@ -16,6 +16,7 @@ export function Footer() {
         className="bg-second flex flex-row items-center gap-3 px-8 py-3.5 rounded-[20px] mb-10"
       >
         <svg
+          aria-hidden="true"
           width="24"
           height="24"
           viewBox="0 0 24 24"
@@ -39,9 +40,11 @@ export function Footer() {
       </p>
       <div className="flex flex-row flex-wrap gap-4 justify-center">
         <Social
-          href="https://github.com/"
+          href="https://github.com/Domanskey"
+          aria-label="my Github profile (opens in a new tab)"
           icon={
             <svg
+              aria-hidden="true"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -59,8 +62,10 @@ export function Footer() {
         ></Social>
         <Social
           href="https://codepen.io/"
+          aria-label="my codepen profile (opens in a new tab)"
           icon={
             <svg
+              aria-hidden="true"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -74,8 +79,10 @@ export function Footer() {
         ></Social>
         <Social
           href="https://pl.linkedin.com/"
+          aria-label="my LinkedIn profile (opens in a new tab)"
           icon={
             <svg
+              aria-hidden="true"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -89,8 +96,10 @@ export function Footer() {
         ></Social>
         <Social
           href="https://www.facebook.com/"
+          aria-label="my Facebook profile (opens in a new tab)"
           icon={
             <svg
+              aria-hidden="true"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -104,8 +113,10 @@ export function Footer() {
         ></Social>
         <Social
           href="https://www.instagram.com/"
+          aria-label="my Instagram profile (opens in a new tab)"
           icon={
             <svg
+              aria-hidden="true"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -120,8 +131,10 @@ export function Footer() {
         ></Social>
         <Social
           href="http://x.com/"
+          aria-label="my Twitter profile (opens in a new tab)"
           icon={
             <svg
+              aria-hidden="true"
               width="24"
               height="24"
               viewBox="0 0 24 24"

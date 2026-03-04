@@ -56,6 +56,7 @@ function Project({ name, stars, description, topics, website, repo }) {
           <h3 className="text-[24px]/[24px] font-semibold">{name}</h3>
           <div className="flex flex-row gap-0.5 px-2 py-1 rounded-sm bg-small-background/10">
             <svg
+              aria-label="star icon"
               width="16"
               height="16"
               viewBox="0 0 24 24"
@@ -84,11 +85,13 @@ function Project({ name, stars, description, topics, website, repo }) {
         <div className="flex flex-col gap-4 items-start">
           <a
             href={website}
+            aria-label="view demo (open in a new tab)"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-primary px-5 py-4 rounded-xl text-second text-[16px]/[24px] font-semibold flex flex-row gap-2 border border-border"
           >
             <svg
+              aria-hidden="true"
               width="24"
               height="24"
               viewBox="0 0 24 24"
@@ -108,10 +111,12 @@ function Project({ name, stars, description, topics, website, repo }) {
           <a
             href={repo}
             target="_blank"
+            aria-label="view source code (open in a new tab)"
             rel="noopener noreferrer"
             className="bg-primary px-5 py-4 rounded-xl text-second text-[16px]/[24px] font-semibold flex flex-row gap-2 border border-border"
           >
             <svg
+              aria-hidden="true"
               width="24"
               height="24"
               viewBox="0 0 24 24"
