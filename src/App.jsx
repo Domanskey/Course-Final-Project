@@ -10,10 +10,12 @@ export default function App() {
   return (
     <>
       <Header></Header>
-      <About></About>
-      <Skills></Skills>
-      <Projects></Projects>
-      <AfterHours></AfterHours>
+      <main>
+        <About></About>
+        <Skills></Skills>
+        <Projects></Projects>
+        <AfterHours></AfterHours>
+      </main>
       <Footer></Footer>
     </>
   );

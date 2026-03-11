@@ -31,7 +31,10 @@ function Info() {
         <h1 className="text-second text-[20px]/[24px] font-semibold mb-0.5">
           Maciek WTFowicz
         </h1>
-        <p className="text-stone-50 opacity-40 uppercase text-[12px]/[16px] font-semibold tracking-[5%]">
+        <p
+          aria-label="frontend developer"
+          className="text-stone-50 opacity-40 uppercase text-[12px]/[16px] font-semibold tracking-[5%]"
+        >
           frontend developer
         </p>
       </div>

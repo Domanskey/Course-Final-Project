@@ -22,18 +22,18 @@ function PersonalInfo() {
       </h2>
       <p className="text-gray-400 text-[16px] sm:text-lg md:text-xl xl:text-[24px]/[32px] font-medium mb-8">
         You might be interested in checking the list of my{" "}
-        <a className="text-stone-50" href="#skills">
+        <a className="text-stone-50 underline" href="#skills">
           skills
         </a>
         . Don’t forget to have a glimpse at my{" "}
-        <a className="text-stone-50" href="#projects">
+        <a className="text-stone-50 underline" href="#projects">
           projects
         </a>
         . I’m looking for a new challenges so if you have one -{" "}
-        <a className="text-stone-50" href="#contact">
+        <a className="text-stone-50 underline" href="#contact">
           contact me
         </a>{" "}
-        <span className="hidden md:inline">😊</span>
+        <span>😊</span>
       </p>
 
       <div className="flex flex-col m:flex-row gap-4 items-start">
