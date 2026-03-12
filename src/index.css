@@ -2,6 +2,9 @@
 @import "tailwindcss";
 
 @layer base {
+  html {
+    @apply scroll-smooth;
+  }
   body {
     @apply bg-primary text-stone-50 font-dm-sans;
   }
