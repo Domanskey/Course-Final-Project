@@ -14,7 +14,7 @@ export function About() {
 
 function PersonalInfo() {
   return (
-    <div className="m:max-w-3/5 xl:max-w-188">
+    <div>
       <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-[48px]/[64px] font-bold mb-4">
         My name is Maciek and I’m an aspiring
         <span className="text-second"> Frontend developer </span>
